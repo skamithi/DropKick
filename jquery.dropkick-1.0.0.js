@@ -257,13 +257,13 @@
     var value, label, data;
 
     value = option.attr('data-dk-dropdown-value');
-    label = option.text();
+    label = option.html();
     data  = $dk.data('dropkick');
 
     $select = data.$select;
     $select.val(value);
 
-    $dk.find('.dk_label').text(label);
+    $dk.find('.dk_label').html(label);
 
     reset = reset || false;
 
