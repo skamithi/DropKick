@@ -112,10 +112,11 @@
       // Build the dropdown HTML
       $dk = _build(dropdownTemplate, data);
 
+      // skamithi: this just messed up my dropdowns.
       // Make the dropdown fixed width if desired
-      $dk.find('.dk_toggle').css({
-        'width' : width + 'px'
-      });
+      //$dk.find('.dk_toggle').css({
+      //  'width' : width + 'px'
+      //});
 
       // Hide the <select> list and place our new one in front of it
       $select.before($dk);
